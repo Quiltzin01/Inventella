@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "233130005285",
+    "project_id": "inventella-556da",
+    "storage_bucket": "inventella-556da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:233130005285:android:5ec339737790294b7700cc",
+        "android_client_info": {
+          "package_name": "Inventella.GI"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8HPzmsA4MLnP-_l58UXFvIK5Jo4y-0g8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
