@@ -5,10 +5,11 @@ import {
   TextInput,
   Button,
 } from "react-native";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import app from "../../firebase-config";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import styles from "../styles/Styles";
+import { Firestore } from "firebase/firestore";
 
 const Login = ({ navigation }) => {
   const [email, setEmail] = useState("");
@@ -80,5 +81,12 @@ const Login = ({ navigation }) => {
     </KeyboardAvoidingView>
   );
 };
+
+const [data, setData] = useState()
+
+async function cargarDatos(){
+    const rolDeUsuario = await Firestore.collection('Moderador').get()
+    setData(email)
+  }
 
 export default Login;
