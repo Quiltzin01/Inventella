@@ -16,7 +16,12 @@ export default function App() {
         <StatusBar style="auto" />
 
         <Stack.Navigator initialRouteName = "usuariobase" >
-
+        <Stack.Screen name="LoginScreen" component={LoginScreen} />
+          <Stack.Screen name="UserHome" component={UserHome} />
+            <Stack.Screen name="Alimentos" component={AlimentosButton} />
+            <Stack.Screen name="Papeleria" component={PapeleriaButton} />
+            <Stack.Screen name="Ropa" component={RopaButton} />
+            <Stack.Screen name="Farmaceutica" component={FarmaceuticaButton} />
         </Stack.Navigator>
       </NavigationContainer>
     </GluestackUIProvider>
