@@ -1,7 +1,6 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/firestore';
-
 import React, { useState, useEffect } from "react";
 import { View, Text, TextInput, Button, KeyboardAvoidingView } from "react-native";
 import firebase from "firebase/app";
