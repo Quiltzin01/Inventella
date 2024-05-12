@@ -7,7 +7,6 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { config } from "@gluestack-ui/config";
 import { GluestackUIProvider } from "@gluestack-ui/themed";
-import Login from "./scr/screens/User"
 
 export default function App() {
   const Stack = createNativeStackNavigator();
@@ -15,10 +14,9 @@ export default function App() {
     <GluestackUIProvider config={config}>
       <NavigationContainer>
         <StatusBar style="auto" />
-        <Stack.Navigator initialRouteName="Login">
-          <Stack.Screen name="Login" component={Login} />
-          <Stack.Screen name="Register" component={Register} />
-          <Stack.Screen name="Home" component={Home} />
+
+        <Stack.Navigator initialRouteName = "usuariobase" >
+
         </Stack.Navigator>
       </NavigationContainer>
     </GluestackUIProvider>
