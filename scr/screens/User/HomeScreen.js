@@ -7,7 +7,12 @@ import PapeleriaButton from './PapeleriaButton';
 import firebase from 'firebase';
 
 const firebaseConfig = {
-  // Your Firebase config
+    apiKey: "AIzaSyC8HPzmsA4MLnP-_l58UXFvIK5Jo4y-0g8 ",
+  authDomain: "YOUR_AUTH_DOMAIN",
+  projectId: "inventella-556da",
+  storageBucket: "Inventella.GI",
+  messagingSenderId: "233130005285",
+  appId: "1:233130005285:android:5ec339737790294b7700cc"
 };
 
 if (!firebase.apps.length) {
