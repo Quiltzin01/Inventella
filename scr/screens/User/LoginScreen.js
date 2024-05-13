@@ -2,20 +2,6 @@ import React, { useState } from 'react';
 import { View, TextInput, Button, StyleSheet, Alert } from 'react-native';
 import firebase from 'firebase';
 
-// Initialize Firebase with your Firebase config
-const firebaseConfig = {
-  apiKey: "AIzaSyC8HPzmsA4MLnP-_l58UXFvIK5Jo4y-0g8 ",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "inventella-556da",
-  storageBucket: "Inventella.GI",
-  messagingSenderId: "233130005285",
-  appId: "1:233130005285:android:5ec339737790294b7700cc"
-};
-
-if (!firebase.apps.length) {
-  firebase.initializeApp(firebaseConfig);
-}
-
 const LoginScreen = ({ navigation }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -27,8 +13,8 @@ const LoginScreen = ({ navigation }) => {
       .then((userCredential) => {
         // Signed in
         const user = userCredential.user;
-        // Navigate to UserHome upon successful login
-        navigation.navigate('UserHome');
+        // Navigate to Home screen upon successful login
+        navigation.navigate('Home');
         console.log('User logged in:', user.email);
       })
       .catch((error) => {
@@ -76,3 +62,4 @@ const styles = StyleSheet.create({
 });
 
 export default LoginScreen;
+
