@@ -11,7 +11,6 @@ export default function App() {
     <GluestackUIProvider config={config}>
       <NavigationContainer>
         <StatusBar style="auto" />
-
         <Stack.Navigator initialRouteName = "usuariobase" >
         <Stack.Screen name="LoginScreen" component={LoginScreen} />
           <Stack.Screen name="UserHome" component={UserHome} />
