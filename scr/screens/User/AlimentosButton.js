@@ -4,6 +4,19 @@ import firestore from '@react-native-firebase/firestore';
 
 const AlimentosButton = () => {
   const handleButtonPress = async () => {
+    const firebaseConfig = {
+      apiKey: "AIzaSyC8HPzmsA4MLnP-_l58UXFvIK5Jo4y-0g8",
+      authDomain: "YOUR_AUTH_DOMAIN",
+      projectId: "inventella-556da",
+      storageBucket: "Inventella.GI",
+      messagingSenderId: "233130005285",
+      appId: "1:233130005285:android:5ec339737790294b7700cc"
+    };
+
+    if (!firebase.apps.length) {
+      firebase.initializeApp(firebaseConfig);
+    }
+
     try {
       const querySnapshot = await firestore().collection('alimentos_items').get();
       querySnapshot.forEach(documentSnapshot => {
